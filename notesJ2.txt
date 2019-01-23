@@ -1,0 +1,80 @@
+# Mardi
+
+* Mode console/graphique : ctrl+alt+F3/F2
+
+* Ouvrir un nouveau bash : `bash`
+
+* Ouvrir/fermer terminal : ctrl+alt+T / ctrl+D
+
+* Faire des recherches sur le man : `/<motif>`
+	* Mot après : n
+	* Mot avant : N
+* Recherche d'une commande par mot-clé : `apropos <mot> / man * k <mot>`
+
+
+* Arborescence
+	* `/` : racine
+	* `/bin`, `/sbin` : programmes indispensables
+	* `/boot` : noyau et bootloader
+	* `/dev` : fichiers spéciaux accès périphériques
+	* `/etc` : fichiers config machine
+	* `/home` : répertoire personels
+	* `/lib` : bibliothèque système
+	* `/media` : média amovibles (clé usb,...)
+	* `/root` : répertoire personnel superutilisateur
+	* `/tmp` : fichiers temporaires
+	* `/usr` : applications, programmes, etc...
+	* `/var` : spolls, logs, caches,...
+	* `man hier` : décrit les fichiers
+
+* Lien symbolique
+	* `ln -s <fichier><lien>` (utiliser chemin absolu mieux que relatif)
+
+* Récusivité des commandes
+	* `mkdir -p a/b` (Créer répertoire b dans un nouveau répertoire b)
+	* `cp -R` (copie répertoire et sous répertoire)
+	* `rm -R` (supprime répertoire et sous-répertoires)
+
+* Voir des fichiers
+	* `cat <fichier>`
+	* `less <fichier>` (permet de défiler ligne par ligne + recherche)
+
+* Canaux de communications :
+	* `stdin` : entrée clavier
+	* `stdout` : sortie du programme
+	* `stdr` : sortie des erreurs
+		* 3 premiers fichiers standards du programme (0,1,2)
+
+* Redirection de sortie
+	* Opérateur `>` : redirige stdout vers un fichier (effacé au préalable)
+	* Opérateur `>>` : redirige stdout vers un ficher (cat fichier1 fichier2 > fichier3)
+
+* bc : programme de calcul
+	* ctrl+D pour quitter
+
+* Redirection d'entrée
+	* Opérateur `<` (bc < calcul.txt)
+
+* Redirection d'erreur
+	* Opérateur `2>` (indique une redirection du 2ème descripteur)
+
+* Redirection vers un descripteur
+	* `&<numero>` (2> &1)
+
+* `tty` : permet de voir fichier associés aux entrées et sorties standard.
+
+* `*` : Joker, équivalent SQL
+
+* RegEx :
+	* Entre `[ ]`
+	* `^` caractère inverse (^1-9 : tout sauf 1-9)
+
+* Expansion d'accolades
+	* `{1..20}` : 1,2,3,4,..,20
+
+* Trouver des fichiers
+	* `locate` : Plus rapide, utilise une base de données
+		* `updatedb` : met à jour la base de données
+	* `find` : Plus long, parcourt l'Arborescence
+		* filtrage par nom, taille, date, type,...
+

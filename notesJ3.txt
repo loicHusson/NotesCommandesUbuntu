@@ -1,0 +1,68 @@
+# Script BASH
+
+* \#!/bin/bash : sha-bang
+
+* Variable
+	* `ma_variable="a"`  (pas d'espace)
+	* `echo $ma_variable` (lecture avec $)
+	* '$ma_variable' : écrit le contenu tel quel
+	* `"$ma_variable"` : écrit le contenu de la variable
+	* \`$ma_variable\` : interprète la variable comme une commande
+
+* Entrée utilisateur
+	* `read -p "Your name?" nom`: Attend entrée utilisateur
+
+* Effectuer des calculs
+	* `let "<calcul>"` : effectue le calcul
+
+* Paramètres du script
+	* $# : nombre de paramètres du script
+	* $n : nieme paramètre
+
+* Tableau
+	* `<nom> = (<valeur> <valeur> ...)` : création d'un tableau
+	* `${<nom>[<index>]}` : lecture du tableau
+	* `<nom>[<index>]=<valeur>` : affectation dans le tableau
+
+* Conditions
+	* `if [ <condition> ] then <actions> else <actions> fi`
+	* elif : else if
+	* `"$<chaine>" == "$<chaine>"` : égalité
+	* `"$<chaine>" != "$<chaine>"`: différence
+	* `-z $<chaine>` : test si variable est vide
+	* `-n $<chaine>` : test si variable non vide
+
+	* Test entre nombres
+		* `$a -eq $b` : test d'égalité
+		* `$a -ne $b` : test d'inégalite
+		* `$a -lt $b` : <
+		* `$a -le $b` : <=
+		* `$a -gt $b` : >
+		* `$a -ge $b` : >=
+
+	* Test de fichier
+		* `-e $nom` : existance du fichier
+		* `-d $nom` : Est un répertoire
+		* `-f $nom` : Est un fichier
+		* `-L $nom` : Est un lien
+		* `-r $nom` : Est lisible
+		* `-w $nom` : Est écrisible
+		* `-x $nom` : Est éxécutable
+		* `$f1 -nt $f2` : $f1 plus récent
+		* `$f1 -ot $f2` : $f1 plus vieux
+
+	* Opérateurs logiques
+		* && : ET ([cond] && [cond])
+		* || : OU ([cond] || [cond])
+		* ! : NON ([ ! cond ])
+
+	* Structure case
+		* `case <var> in` 
+		* '<val>') : valeur possible du case
+		* ;; : break
+
+	* Boucles
+		* Tant que ... faire
+			* `while [cond] do <action> done`
+		* Pour
+			* `for <variable> in val1 val2 val3 do <actions> done`

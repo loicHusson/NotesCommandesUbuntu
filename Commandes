@@ -1,0 +1,39 @@
+
+* ls : listage de fichier
+	* -l : long
+	* -a : all
+* cd : déplacement du répertoire courant 
+	* . Courant
+	* .. Parent
+	* ~ Home
+	*précédent
+* cat <fichier><fichier>... : contaténation des fichiers sur la sortie
+* wget <adresse> : télécharge le fichier à l'adresse donnée
+* gunzip : unzip gz
+* head/tail : début et fin d'un fichier
+* grep : recherche occurence dans un fichier
+	* -c : count
+	* -m <n> : nière occurence
+* find <directory>
+	* -name <nom>
+	* -size <size>
+* apt update : mise à jour dela BD des paquets
+* apt upgrade : mise à jour des paquets installés
+* apt install <paquet>
+* apt purge <paquet>
+* dpkg -i <fichier> : quand le paquet n'est pas disponible apt
+* mkdir <directory> : créer un répertoire
+	* -p <directory>/<directory> : Créer récursivement
+* cp <file> <directory> : Copie le fichier dans le répertoire
+	* -R Copie récursive
+* rm <file/dir> : Supprime
+	* -R : Supprime récursivement les répertoires
+* chmod : gère les droits d'un fichier
+	* u : Propriétaire du fichier
+	* g : Groupe
+	* a : All
+	* w : Write
+	* r : Read
+	* x : Execute
+* chown <nom> <fichier> : Change le propriétaire du fichier
+* chgrp <nom> <fichier> : Change le groupe du fichier
