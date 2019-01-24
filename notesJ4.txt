@@ -40,6 +40,7 @@
 		* `git remote add origin <url>` : défini le remote
 		* `git push -u origin master` : premier push
 		* Une fois ceci fait, vous pouvez simplement faire push et pull
+		* `git remote remove origin` : supprime le remote origin
 
 * Gestion des branches
 	* `git branch <nom>` : créer une branche
